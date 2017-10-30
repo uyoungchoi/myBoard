@@ -17,7 +17,9 @@ function login(){
 }
 </script>
 <body>
-
-<input type="button" value="google 연동" id="gmailLogin" onclick="login()">
+<div id="title">Drawing Your Daily</div>
+<div id="subTitle"><div id="schedule" class="yesSelect">일정</div><div id="board" class="noSelect">게시판</div></div>
+<div id="content"></div>
+<!-- <input type="button" value="google 연동" id="gmailLogin" onclick="login()"> -->
 </body>
 </html>
