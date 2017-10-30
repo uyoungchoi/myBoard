@@ -1,1 +1,16 @@
-@charset "EUC-KR";
+.subTitle #yesSelect{ //선택이 되었을 경우
+	
+}
+.subTitle #noSelect{  //선택이 안되었을 경우
+	
+}
+.title{
+	
+}
+.content{
+	width:100%;
+	height:100%;
+}
+.header{
+	//fixed필요
+}
