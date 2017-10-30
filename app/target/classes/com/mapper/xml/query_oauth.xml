@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mapper namespace="oauth">
+ 	
+ 	<select id="getToken" parametertype="java.util.HashMap" resultMap="java.util.HashMap">
+ 		select 
+ 			accessToken as accessToken,
+ 			refreshToken as refreshToken
+ 		from clientinfo
+ 	</select>
+ 	
+ </mapper> 
