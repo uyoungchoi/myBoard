@@ -127,7 +127,7 @@ table, td, td{
 .ib{
 	display:inline-block;
 }
-#addDiaryPopup{
+#addSchedulePopup{
 	z-index:10000;
 	background-color:white;
 	display:inline-block;

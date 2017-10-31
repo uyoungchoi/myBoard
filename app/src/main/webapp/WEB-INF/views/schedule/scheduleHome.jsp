@@ -136,8 +136,9 @@ function closeSchedulePopup(){
 }
 function addPopup(){
 	var data = {
-			"title" : $('#titlePopup').val()
-	}
+			"title" : $('#titlePopup').val(),
+			"content" : ""
+	};
 	$.ajax({
 		data : data,
         url : 'schedule/addSchedule.do',

@@ -60,7 +60,7 @@ public class oauthSvcImpl implements oauthSvc{
 	JacksonFactory JSON_FACTORY;
 	final List<String> SCOPES;
 
-	@Autowired
+	//@Autowired
     private SqlSession query;
 	
 	public oauthSvcImpl(){
