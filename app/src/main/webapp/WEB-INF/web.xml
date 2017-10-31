@@ -22,6 +22,6 @@
   </servlet-mapping>
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>classpath*:com/mapper/xml/*-context.xml</param-value>
+    <param-value>classpath*:/src/main/resources/config/spring-context.xml</param-value>
   </context-param>
 </web-app>
