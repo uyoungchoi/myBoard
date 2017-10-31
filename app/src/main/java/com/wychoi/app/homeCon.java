@@ -19,9 +19,9 @@ import com.wychoi.app.impl.oauthSvcImpl;
  * Handles requests for the application home page.
  */
 @Controller
-public class HomeController {
+public class homeCon {
 	
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(homeCon.class);
 	
 	//메인페이지로 이동
 	@RequestMapping(value = "/home.do", method = RequestMethod.GET)

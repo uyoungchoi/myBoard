@@ -1,6 +1,8 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
-
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+html, body { height:100%; overflow:hidden }
+
 #subTitle .yesSelect{
 	display: inline-block;
 	font-size: 15px;
@@ -8,8 +10,10 @@
     border-radius: 5px;
     border: none;
 	width:60px;
-	height:30px;   
+	height:30px;  
+	outline: none; 
 }
+
 #subTitle .noSelect{ 
 	display: inline-block;
 	font-size: 15px;
@@ -18,33 +22,96 @@
     border: none;
 	width:60px;
 	height:30px;   
+	outline: none;
 }
+
 #title{
     text-align: center;
     font-size: 40px;
     padding-top: 50px;
     font-weight: 700;
 }
+
 #content{
 	width:100%;
 	height:100%;
 }
+
 #header{
 	text-align: right;
     font-weight: 400;
 }
+
 body{
 	background-color: #e7d7c6;
 	font-family: 'Nanum Gothic', serif;
 }
+
 #subTitle{
 	text-align:center;
 	padding-top:35px;
 }
+
 a{
 	 text-decoration: none;
 	 color:black;
 }
+
 a:hover{
 	color:black;
+}
+
+#calendar{
+	padding-top:20px;
+}
+
+#wrap{
+	padding-top:20px;
+}
+
+#scheduleContent, #boardContent{
+	margin:5px;
+	padding-top:50px;
+	border:2px solid #ad967f;
+	height:100%;
+}
+
+#btnPrev, #btnNext{
+	display: inline-block;
+    font-size: 15px;
+    background-color: #ad967e;
+    border-radius: 100%;
+    border: none;
+    width: 25px;
+    height: 25px;
+    outline: none;
+}
+
+.date-cell.sun, .sun{
+	color:red;
+}
+
+td{
+	height: 50px;
+    width: 50px;
+    text-align: left;
+    padding-top: 0px;
+    vertical-align: top;
+}
+
+.wrap {
+	width: 500px;
+	margin: 0 auto;
+}
+.btn-holder {
+	text-align: center;
+	margin: 10px 0 10px 0;
+}
+#calendar table {
+	
+	text-align: center;
+	border : 1px solid black
+}
+table, td, td{
+	border:1px solid black;
 }

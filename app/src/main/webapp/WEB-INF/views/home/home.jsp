@@ -21,27 +21,46 @@ window.onload = function (){
 
 function login(){
 	$.ajax({
-        url : 'oauth/login.do',
+        url : 'home/login.do',
         method : 'GET',
         async : false
     });
 }
 function logout(){
-	
+	//쿠키제거
 }
 function myInfo(){
-	
+	//내 정보 보기
+	$.ajax({
+        url : 'home/myInfo.do',
+        method : 'GET',
+        async : false
+    });
 }
 function join(){
-	
+	//회원가입
+	$.ajax({
+        url : 'home/join.do',
+        method : 'GET',
+        async : false
+    });
 }
-function toggle(pModam){
-	if(pModam.getAttribute("name")=="board"){   //보이는 화면 변경
+function toggle(data){
+	if(data.getAttribute("name")=="board"){   //보이는 화면 변경(게시판 클릭시)
+	
 		$("#boardContent").css("display", "block");
 		$("#scheduleContent").css("display", "none");
+		
+		$('[name=board]').attr("class", "yesSelect");
+		$('[name=schedule]').attr("class", "noSelect");
+		
 	}else{
+		
 		$("#boardContent").css("display", "none");
 		$("#scheduleContent").css("display", "block");
+		
+		$('[name=board]').attr("class", "noSelect");
+		$('[name=schedule]').attr("class", "yesSelect");
 	}
 }
 </script>
@@ -56,7 +75,7 @@ function toggle(pModam){
 <a href="#" onclick="logout()">로그아웃 |</a>
 <a href="#" onclick="myInfo()">내정보</a></div> 
   
-<div id="title">Drawing Your Daily</div>
+<div id="title">음...</div>
 
 <div id="subTitle">
 	<input type="button" class="yesSelect" value="일정" onclick="toggle(this)" name="schedule">	

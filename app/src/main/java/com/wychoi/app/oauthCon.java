@@ -14,7 +14,7 @@ import com.wychoi.app.impl.oauthSvcImpl;
 
 @Controller
 public class oauthCon {
-	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	private static final Logger logger = LoggerFactory.getLogger(homeCon.class);
 	
 	//access, refresh token을 가져오는 코드?
 	@RequestMapping(value = "oauth/getToken.do", method = RequestMethod.GET)
