@@ -7,43 +7,6 @@
 <title>Insert title here</title>
 <%String contextPath = "/WEB-INF/views";%>
 <link rel="stylesheet" type="text/css" href="/resources/css/allCss.css">
-<style>
-.subTitle #yesSelect{
-	display: inline-block;
-	font-size: 20px;
-	background-color: #3F51B5;
-    border-radius: 5px;
-    border: none;   
-}
-.subTitle #noSelect{ 
-	display: inline-block;
-	font-size: 20px;
-	background-color: #3F51B5;
-    border-radius: 5px;
-    border: none;   
-}
-.title{
-	font-family: 'Nanum Gothic Coding', serif;
-    text-align: center;
-    font-size: 40;
-    padding-top: 50px;
-    font-weight: 700;
-}
-.content{
-	width:100%;
-	height:100%;
-}
-.header{
-	text-align: right;
-    font-weight: 400;
-}
-.body{
-	background-color: #e7d7c6;
-    font-family: "Roboto",Arial,serif;
-}
-</style>
-</head>
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
@@ -63,10 +26,17 @@ function login(){
         async : false
     });
 }
-
-function toggle(){
+function logout(){
 	
-	if($("#boardContent").css("display")=="none"){   //보이는 화면 변경
+}
+function myInfo(){
+	
+}
+function join(){
+	
+}
+function toggle(pModam){
+	if(pModam.getAttribute("name")=="board"){   //보이는 화면 변경
 		$("#boardContent").css("display", "block");
 		$("#scheduleContent").css("display", "none");
 	}else{
@@ -75,11 +45,24 @@ function toggle(){
 	}
 }
 </script>
+</head>
 
 <body>
-<div id="header">로그인 | 로그아웃 | 내정보</div> //로그인이 되어있을 경우만 로그아웃이 나오고 회원가입 창도 만들기 필수!
+<div id="header">
+
+<a href="#" onclick="login()">로그인 |</a>
+<a href="#" onclick="join()">회원가입 </a>
+
+<a href="#" onclick="logout()">로그아웃 |</a>
+<a href="#" onclick="myInfo()">내정보</a></div> 
+  
 <div id="title">Drawing Your Daily</div>
-<div id="subTitle"><div id="schedule" class="yesSelect">일정</div><div id="board" class="noSelect">게시판</div></div>
+
+<div id="subTitle">
+	<input type="button" class="yesSelect" value="일정" onclick="toggle(this)" name="schedule">	
+	<input type="button" class="noSelect" value="게시판" onclick="toggle(this)" name="board">
+</div>
+
 <div id="scheduleContent"><jsp:include page="<%=contextPath+\"/schedule/scheduleHome.jsp\"%>"/></div>
 <div id="boardContent"><jsp:include page="<%=contextPath+\"/board/boardHome.jsp\"%>"/></div>
 </body>
