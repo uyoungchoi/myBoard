@@ -67,6 +67,7 @@ a:hover{
 
 #wrap{
 	padding-top:20px;
+	position:relative;
 }
 
 #scheduleContent, #boardContent{
@@ -103,15 +104,38 @@ td{
 	width: 500px;
 	margin: 0 auto;
 }
-.btn-holder {
+.btn {
 	text-align: center;
 	margin: 10px 0 10px 0;
 }
 #calendar table {
-	
 	text-align: center;
 	border : 1px solid black
 }
 table, td, td{
 	border:1px solid black;
+}
+.date-cell.not-this-month{
+	color:gray;
+} 
+.noPopup{
+	display:none !important;
+}
+.yesPopup{
+	
+}
+.ib{
+	display:inline-block;
+}
+#addDiaryPopup{
+	z-index:10000;
+	background-color:white;
+	display:inline-block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:250px;
+}
+i.fa.fa-times{
+	float:right;
 }

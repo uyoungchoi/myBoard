@@ -6,6 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Insert title here</title>
 <%String contextPath = "/WEB-INF/views";%>
+
 <link rel="stylesheet" type="text/css" href="/resources/css/allCss.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
