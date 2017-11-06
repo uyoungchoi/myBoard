@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <mapper namespace="com.wychoi.query">
- 	<insert id="addSchedule" parametertype="java.util.HashMap" resultMap="java.util.HashMap">
+ 	<insert id="addSchedule" parametertype="java.util.HashMap" resultType="java.util.HashMap">
  		insert into board (writer)
  			values('a')
  	</insert>

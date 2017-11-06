@@ -4,9 +4,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
+<script>
+$.ajax({
+    url : '/borad/list.do',
+    method : 'GET',
+    async : false
+});
+</script>
 </head>
 <body>
-//여기서는 게시판 템플릿
+#게시판 홈(boardHome.jsp)
+
 </body>
 </html>

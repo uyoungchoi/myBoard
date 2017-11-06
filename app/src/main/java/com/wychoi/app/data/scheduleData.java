@@ -1,4 +1,4 @@
-package com.wychoi.app.impl;
+package com.wychoi.app.data;
 
 import java.util.Date;
 

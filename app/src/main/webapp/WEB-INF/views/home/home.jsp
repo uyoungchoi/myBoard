@@ -84,6 +84,6 @@ function toggle(data){
 </div>
 
 <div id="scheduleContent"><jsp:include page="<%=contextPath+\"/schedule/scheduleHome.jsp\"%>"/></div>
-<div id="boardContent"><jsp:include page="<%=contextPath+\"/board/boardHome.jsp\"%>"/></div>
+<div id="boardContent"><jsp:include page="<%=contextPath+\"/board/boardList.jsp\"%>"/></div>
 </body>
 </html>

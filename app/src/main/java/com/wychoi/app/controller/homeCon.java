@@ -1,4 +1,4 @@
-package com.wychoi.app;
+package com.wychoi.app.controller;
 
 import java.util.Locale;
 
